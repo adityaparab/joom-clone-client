@@ -1,0 +1,177 @@
+{
+    "i18n": {
+        "languages": {
+            "en": "English",
+            "pl": "Polski",
+            "es": "Español"
+        },
+        "selectedLanguage": "en",
+        "translations": {
+            "en": {
+                "titles": {
+                    "favorites": "Favorites",
+                    "signIn": "Sign In",
+                    "myCart": "My Cart",
+                    "allCategories": "All Categories"
+                },
+                "categories": {
+                    "womensClothingAccessories": "Women's Clothing & Accessories",
+                    "electronics": "Electronics",
+                    "mensClothingAccessories": "Men's Clothing & Accessories",
+                    "footwear": "Footwear",
+                    "watches": "Watches",
+                    "homeAndKitchen": "Home & Kitchen",
+                    "healthAndBeauty": "Health & Beauty",
+                    "automobilesAndMotorcycles": "Automobiles & Motorcycles",
+                    "jewelleryAndBijouterie": "Jewelry & Bijouterie",
+                    "babyAndKids": "Baby & Kids",
+                    "hobbySportAndTraveling": "Hobby, Sport, Traveling",
+                    "luggageAndBags": "Luggage & Bags",
+                    "petProducts": "Pet products",
+                    "weddingsAndEvents": "Weddings & Events",
+                    "camerasAndOptics": "Cameras and Optics",
+                    "industryAndBusiness": "Industry & Business",
+                    "officeSchoolSupplies": "Office & School Supplies",
+                    "gardenSupplies": "Garden Supplies",
+                    "tea": "Tea"
+                }
+            },
+            "es": {
+                "titles": {
+                    "favorites": "Favoritos",
+                    "signIn": "Iniciar sesión",
+                    "myCart": "Mi carrito",
+                    "allCategories": "Todas las categorías"
+                },
+                "categories": {
+                    "womensClothingAccessories": "Ropa y accesorios para mujer",
+                    "electronics": "Electrónica",
+                    "mensClothingAccessories": "Ropa y accesorios para hombre",
+                    "footwear": "Zapatos",
+                    "watches": "Reloj",
+                    "homeAndKitchen": "Artículos para el hogar",
+                    "healthAndBeauty": "Salud y belleza",
+                    "automobilesAndMotorcycles": "Prueba de JulliLeto",
+                    "jewelleryAndBijouterie": "Joyas y bisutería",
+                    "babyAndKids": "Artículos para bebé",
+                    "hobbySportAndTraveling": "Pasatiempos, deporte, viajes",
+                    "luggageAndBags": "Maletas y Bolsos",
+                    "petProducts": "Productos para mascotas",
+                    "weddingsAndEvents": "Bodas y eventos",
+                    "camerasAndOptics": "Cámaras y óptica",
+                    "industryAndBusiness": "Industria y Comercio",
+                    "officeSchoolSupplies": "Suministros Educativos y Escolares",
+                    "gardenSupplies": "Suministros para jardinería",
+                    "tea": "Té"
+                }
+            },
+            "pl": {
+                "titles": {
+                    "favorites": "Ulubione",
+                    "signIn": "Zaloguj się",
+                    "myCart": "Moj Koszyk",
+                    "allCategories": "Wszystkie kategorie"
+                },
+                "categories": {
+                    "womensClothingAccessories": "Damska odzież i akcesoria",
+                    "electronics": "Elektronika",
+                    "mensClothingAccessories": "Męska odzież i akcesoria",
+                    "footwear": "Buty",
+                    "watches": "Zegarki",
+                    "homeAndKitchen": "Wszystko dla domu",
+                    "healthAndBeauty": "Uroda i zdrowie",
+                    "automobilesAndMotorcycles": "Samochody i motocykle",
+                    "jewelleryAndBijouterie": "Ozdoby i biżuteria",
+                    "babyAndKids": "Artykuły dziecięce",
+                    "hobbySportAndTraveling": "Hobby, sport, podróżowanie",
+                    "luggageAndBags": "Walizki i torby",
+                    "petProducts": "Produkty dla zwierząt",
+                    "weddingsAndEvents": "Uroczystości i wesela",
+                    "camerasAndOptics": "Kamery i urządzenia optyczne",
+                    "industryAndBusiness": "Przemysł i biznes",
+                    "officeSchoolSupplies": "Artykuły piśmiennicze",
+                    "gardenSupplies": "Ogrodnictwo",
+                    "tea": "Herbata"
+                }
+            }
+        }
+    },
+    "categories": [
+        {
+            "id": "cat_0001",
+            "i18nKey": "categories.womensClothingAccessories"
+        },
+        {
+            "id": "cat_0002",
+            "i18nKey": "categories.electronics"
+        },
+        {
+            "id": "cat_0003",
+            "i18nKey": "categories.mensClothingAccessories"
+        },
+        {
+            "id": "cat_0004",
+            "i18nKey": "categories.footwear"
+        },
+        {
+            "id": "cat_0005",
+            "i18nKey": "categories.watches"
+        },
+        {
+            "id": "cat_0006",
+            "i18nKey": "categories.homeAndKitchen"
+        },
+        {
+            "id": "cat_0007",
+            "i18nKey": "categories.healthAndBeauty"
+        },
+        {
+            "id": "cat_0008",
+            "i18nKey": "categories.automobilesAndMotorcycles"
+        },
+        {
+            "id": "cat_0009",
+            "i18nKey": "categories.jewelleryAndBijouterie"
+        },
+        {
+            "id": "cat_00010",
+            "i18nKey": "categories.babyAndKids"
+        },
+        {
+            "id": "cat_00011",
+            "i18nKey": "categories.hobbySportAndTraveling"
+        },
+        {
+            "id": "cat_00012",
+            "i18nKey": "categories.luggageAndBags"
+        },
+        {
+            "id": "cat_00013",
+            "i18nKey": "categories.petProducts"
+        },
+        {
+            "id": "cat_00014",
+            "i18nKey": "categories.weddingsAndEvents"
+        },
+        {
+            "id": "cat_00015",
+            "i18nKey": "categories.camerasAndOptics"
+        },
+        {
+            "id": "cat_00016",
+            "i18nKey": "categories.industryAndBusiness"
+        },
+        {
+            "id": "cat_00017",
+            "i18nKey": "categories.officeSchoolSupplies"
+        },
+        {
+            "id": "cat_00018",
+            "i18nKey": "categories.gardenSupplies"
+        },
+        {
+            "id": "cat_00019",
+            "i18nKey": "categories.tea"
+        }
+    ]
+}
