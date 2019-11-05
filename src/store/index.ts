@@ -1,40 +1,23 @@
-import { createStore, combineReducers, applyMiddleware } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
+import { createEpicMiddleware } from 'redux-observable';
 import thunk from 'redux-thunk';
-import { syncTranslationWithStore, i18nReducer } from 'react-redux-i18n';
+import { epics$ } from './epics';
+import { reducers } from './reducers';
+import { AppState } from './models';
+import { composeWithDevTools } from 'redux-devtools-extension';
+import { LocalizationActionType } from './features/localization/localization.actions';
+import { Services } from '../services';
+import * as LocalizationServices from '../services/localization.service';
 
-const translations = {
-    en: {
-        titles: {
-            favorites: 'Favorites',
-            signIn: 'Sign In',
-            myCart: 'My Cart'
-        }
-    },
-    pl: {
-        titles: {
-            favorites: 'Ulubione',
-            signIn: 'Zaloguj się ',
-            myCart: 'Moj Koszyk'
-        }
-    },
-    es: {
-        titles: {
-            favorites: 'Favoritos',
-            signIn: 'Iniciar sesión',
-            myCart: 'Mi carrito'
-        }
-    }
-};
+const epicMiddleware = createEpicMiddleware<
+  LocalizationActionType,
+  LocalizationActionType,
+  AppState,
+  Services
+>({ dependencies: LocalizationServices });
 
-const reducers = combineReducers({
-    i18n: i18nReducer
-});
+const enhancers = composeWithDevTools(applyMiddleware(thunk, epicMiddleware));
 
-export const store = createStore(
-    reducers,
-    applyMiddleware(thunk)
-);
+export const store = createStore(reducers, enhancers);
 
-syncTranslationWithStore(store);
-store.dispatch({ type: '@@i18n/LOAD_TRANSLATIONS', translations });
-store.dispatch({ type: '@@i18n/SET_LOCALE', locale: 'pl' });
+epicMiddleware.run(epics$);
